@@ -30,10 +30,6 @@ class Piggy(object):
             time.sleep(.2)
 
 
-
-
-    def cha_cha(self):
-
 def menu():
     while True:
         input = raw_input("press 1 for cruise \n Press 2 for pules \n Press 3 for sweep")
@@ -52,6 +48,5 @@ p = Piggy()
 try:
     menu()
 except(KeyboardInterrupt, SystemExit):
-    print(ee)
     from gopigo import *
     stop()
