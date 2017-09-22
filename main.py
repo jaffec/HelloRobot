@@ -32,12 +32,12 @@ class Piggy(object):
 
 def menu():
     while True:
-        input = raw_input("press 1 for cruise \n Press 2 for pules \n Press 3 for sweep")
+        input = raw_input("Press 1 for cruise \nPress 2 for pules \nPress 3 for sweep\n")
         if "1" in input:
             p.cruise()
         elif"2" in input:
             p.pulse()
-        elif "3" in input():
+        elif "3" in input:
             p.servo_sweep()
 
 
