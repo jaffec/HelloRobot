@@ -50,8 +50,8 @@ p = Piggy()
 
 
 try:
-except Exception as ee:
+    menu()
+except(KeyboardInterrupt, SystemExit):
     print(ee)
     from gopigo import *
-    stop())
-
+    stop()
