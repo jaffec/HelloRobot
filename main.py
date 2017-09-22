@@ -32,14 +32,25 @@ class Piggy(object):
 
 
     def cha_cha(self):
-        for x in range(5):
-            right_rot()
-            time.sleep(.5)
-            left_rot()
-            time.sleep(.5)
-            motor_fwd()
 
-            stop()
+def menu():
+    while True:
+        input = raw_input("press 1 for cruise \n Press 2 for pules \n Press 3 for sweep")
+        if '1 in input:'
+            p.cruise()
+        elif"2" in input:
+            p.pulse()
+        elif "3" in input():
+            p.servo_sweep()
+
 
 
 p = Piggy()
+
+
+try:
+except Exception as ee:
+    print(ee)
+    from gopigo import *
+    stop())
+
